@@ -18,5 +18,9 @@
   "中汽研": {
     "summary": "CATARC brand identity for product certification, evaluation reports, automotive technology promotion, and business visits",
     "primary_color": "#004098"
+  },
+  "facom-ufms": {
+    "summary": "FACOM/UFMS institutional identity — technical talks, lectures, defenses, seminars, research and extension projects at the Faculdade de Computação, Universidade Federal de Mato Grosso do Sul",
+    "primary_color": "#0088B7"
   }
 }

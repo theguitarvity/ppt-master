@@ -1,0 +1,39 @@
+{
+  "brand_key": "facom-ufms",
+  "assets": [
+    {
+      "asset": "images/grafo_facom.png",
+      "source_url": "https://www.facom.ufms.br/wp-content/uploads/2015/12/grafo_facom.png",
+      "captured_at": "2026-07-27",
+      "usage_condition": "Símbolo oficial da FACOM (Grafo de Petersen: 10 vértices, 15 arestas, número cromático 3), publicado em https://www.facom.ufms.br/institucional/identidade-visual/. Uso interno acadêmico permitido sem alteração; não redesenhar."
+    },
+    {
+      "asset": "images/facom_logo_full.png",
+      "source_url": "https://www.facom.ufms.br/wp-content/uploads/2015/10/facom_t-e1570141752277.png",
+      "captured_at": "2026-07-27",
+      "usage_condition": "Versão de logo institucional FACOM publicada na página de identidade visual da unidade; mesma condição de uso do grafo_facom.png."
+    },
+    {
+      "asset": "images/ufms_logo_positivo.png",
+      "source_url": "https://www.ufms.br/wp-content/uploads/2015/11/ufms_logo_assinatura_horizontal_positivo.png",
+      "captured_at": "2026-07-27",
+      "usage_condition": "Assinatura principal oficial da UFMS (versão positiva/colorida), embutida no cabeçalho de https://www.ufms.br/. Uso governado pelo Manual de Identidade Visual UFMS (Resolução nº 493-Coun/UFMS, 1º abr. 2026); uso interno acadêmico permitido sem alteração."
+    },
+    {
+      "asset": "images/ufms_logo_negativo.png",
+      "source_url": "https://www.ufms.br/wp-content/uploads/2015/11/ufms_logo_assinatura_horizontal_negativo.png",
+      "captured_at": "2026-07-27",
+      "usage_condition": "Assinatura principal oficial da UFMS (versão negativa/branca para fundos escuros), embutida no cabeçalho de https://www.ufms.br/. Mesma governança do arquivo positivo."
+    }
+  ],
+  "document_provenance": {
+    "manual": "Manual de Identidade Visual UFMS, abril de 2026, aprovado pela Resolução nº 493-Coun/UFMS de 1º de abril de 2026",
+    "source_url": "https://agecom.ufms.br/files/2026/06/Manual-de-Identidade-Visual-UFMS_abr2026.pdf",
+    "captured_at": "2026-07-27",
+    "pages_cited": {
+      "13": "Cor institucional (Hexadecimal #0088B7, Pantone 116-16U) e Tipografia (Futura XBlkCn BT personalizada; Swis721 Cn BT de apoio)",
+      "25": "Grid e área de proteção — distância mínima equivalente às três primeiras colunas do módulo/símbolo",
+      "27": "Sobre fundos coloridos — limiar de 40% de preenchimento para troca entre marca colorida/preta (fundos claros) e marca branca (fundos > 40% de preenchimento)"
+    }
+  }
+}

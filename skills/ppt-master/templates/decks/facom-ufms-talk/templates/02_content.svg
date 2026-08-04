@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="1280" height="720" viewBox="0 0 1280 720"
+  data-pptx-master="facom_ufms_light_master" data-pptx-master-name="FACOM/UFMS Light"
+  data-pptx-layout="content" data-pptx-layout-name="Title and Content">
+  <rect id="light-master-background" x="0" y="0" width="1280" height="720" fill="#FFFFFF"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="light-master-top-rule" x="0" y="0" width="1280" height="4" fill="#0088B7"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="light-master-logo" x="1107" y="30" width="113" height="54"
+    href="../../brands/facom-ufms/images/ufms_logo_positivo.png"
+    preserveAspectRatio="xMidYMid meet"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <line id="light-master-header-rule" x1="60" y1="95" x2="1220" y2="95" stroke="#D6E4E9"
+    stroke-width="1" data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="light-master-bottom-rule" x="0" y="716" width="1280" height="4" fill="#0088B7"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <g id="content-title-slot" data-pptx-placeholder="title"
+    data-pptx-bounds="60 32 1000 48">
+    <text id="content-title-carrier" data-pptx-carrier="true"
+      x="60" y="65" fill="#1A1A1A"
+      font-family="Inter, Arial, sans-serif"
+      font-size="28" font-weight="700">{{PAGE_TITLE}}</text>
+  </g>
+  <g id="content-object-slot" data-pptx-placeholder="object" data-pptx-idx="1"
+    data-pptx-bounds="60 118 1160 540">
+    <text id="content-object-carrier" data-pptx-carrier="true"
+      x="60" y="150" fill="#5A6B70"
+      font-family="Inter, Arial, sans-serif" font-size="18">{{CONTENT_AREA}}</text>
+  </g>
+  <g id="content-slide-number-slot" data-pptx-placeholder="slide-number"
+    data-pptx-idx="2" data-pptx-bounds="1140 682 80 24">
+    <text id="content-slide-number-carrier" data-pptx-carrier="true"
+      x="1220" y="702" text-anchor="end" fill="#999999"
+      font-family="Inter, Arial, sans-serif" font-size="14">{{PAGE_NUM}}</text>
+  </g>
+</svg>

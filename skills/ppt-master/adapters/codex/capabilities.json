@@ -1,0 +1,14 @@
+{
+  "host_id": "codex",
+  "skill_discovery": true,
+  "shell": true,
+  "filesystem_read": true,
+  "filesystem_write": true,
+  "browser": "optional",
+  "image_generation": "native",
+  "parallel_agents": "sequential-fallback",
+  "interactive_confirmation": "chat",
+  "image_inspection": true,
+  "pptx_rendering": "external",
+  "notes": "browser: optional — Playwright/Chromium (used by visual_review.py for the render+contact-sheet gate) is not guaranteed present in every Codex sandbox; when absent, conformance_report.py MUST report the render gate as skipped (blocking, per FR-019) rather than silently omitting it. parallel_agents: sequential-fallback — Codex has no equivalent to Claude Code's team/subagent primitives, so any multi-agent stage (e.g. optional visual-review batching) runs sequentially instead. interactive_confirmation: chat — Codex sessions are CLI-first; the Step 4 confirm_ui web page is not assumed reachable, so confirmation falls back to the documented chat flow. pptx_rendering: external — no bundled PowerPoint/LibreOffice is assumed; the OOXML-audit gate relies on whatever renderer is already available in the environment (see spec.md Assumptions)."
+}

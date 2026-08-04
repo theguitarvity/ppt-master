@@ -1,0 +1,43 @@
+# FACOM/UFMS brand policy — machine-readable rules consumed by brand_lint.py.
+# Every value below is extracted from official sources, never estimated.
+# Source citations live in provenance.json (document_provenance.pages_cited).
+
+institutional_color: "#0088B7"
+institutional_color_pantone: "116-16U"
+institutional_color_source: "Manual de Identidade Visual UFMS (abr. 2026), p.13 — Cor institucional"
+
+mark_variants:
+  positive: "images/ufms_logo_positivo.png"
+  negative: "images/ufms_logo_negativo.png"
+  symbol_facom: "images/grafo_facom.png"
+
+contrast_threshold_dark_fill_pct: 40
+contrast_threshold_source: >
+  Manual de Identidade Visual UFMS (abr. 2026), p.27 — "Sobre fundos coloridos": em fundos
+  claros (até 40% de preenchimento) usar a marca colorida ou preta; em fundos com mais de
+  40% de preenchimento, usar sempre a marca em branco (negativa).
+
+protection_area_ratio: "3x"
+protection_area_unit: module
+protection_area_definition: >
+  A área de proteção NÃO é uma porcentagem simples do bounding box do logo. O manual define
+  um módulo de grid equivalente à distância entre as três primeiras colunas do símbolo; a
+  área de proteção mínima ao redor da marca equivale a 3 desses módulos (protection_area_ratio:
+  "3x" = 3 × module). Ferramentas que precisem de um valor em pixels/pt DEVEM primeiro derivar
+  o tamanho do módulo a partir das dimensões reais do arquivo de logo usado (a proporção do
+  módulo é fixa em relação ao símbolo, o valor absoluto escala com o tamanho de exibição).
+protection_area_ratio_source: >
+  Manual de Identidade Visual UFMS (abr. 2026), p.25 — "Grid e área de proteção": "Área de
+  proteção é a distância mínima que deve ser preservada entre a marca UFMS e outro elemento
+  de texto ou design que seja inserido no layout. Essa área equivale à distância entre as
+  três primeiras colunas do símbolo."
+
+typography:
+  signature: "Futura XBlkCn BT (personalização institucional)"
+  support: "Swis721 Cn BT"
+  slogan: "Poppins Bold"
+  source: "Manual de Identidade Visual UFMS (abr. 2026), p.13 — Tipografia"
+  note: >
+    Tipografias institucionais oficiais NÃO são redistribuídas neste pacote (Assumption do
+    spec.md). Aplicam-se apenas aos assets de logo/assinatura preservados sem alteração;
+    texto de corpo e títulos dos decks gerados usa fontes livres/instaláveis de fallback.

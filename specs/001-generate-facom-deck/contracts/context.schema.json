@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ppt-master://schemas/context/v1",
+  "title": "PPT Master CONTEXT.md frontmatter",
+  "description": "Schema for the YAML frontmatter of a CONTEXT.md talk-deck input. The Markdown body is not schema-validated; it is preserved verbatim. Delivered to skills/ppt-master/templates/schemas/context.schema.json in Phase 1 implementation.",
+  "type": "object",
+  "required": ["presentation"],
+  "properties": {
+    "presentation": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "language": {"type": "string", "default": "pt-BR"},
+        "audience": {"type": "string"},
+        "objective": {"type": "string"},
+        "duration_minutes": {"type": "number", "exclusiveMinimum": 0, "default": 30},
+        "slide_count": {
+          "oneOf": [
+            {"type": "integer", "exclusiveMinimum": 0},
+            {"const": "auto"}
+          ],
+          "default": "auto"
+        },
+        "format": {"type": "string", "enum": ["ppt169"], "default": "ppt169"}
+      },
+      "additionalProperties": true
+    },
+    "brand": {
+      "type": "object",
+      "properties": {
+        "profile": {
+          "type": "string",
+          "description": "Must resolve to an entry in skills/ppt-master/templates/brands/brands_index.json when present."
+        }
+      },
+      "additionalProperties": true
+    },
+    "delivery": {
+      "type": "object",
+      "properties": {
+        "animations": {
+          "type": "string",
+          "enum": ["none", "subtle", "purposeful", "narrative"],
+          "default": "none"
+        },
+        "speaker_notes": {"type": "boolean", "default": false},
+        "citations": {"type": "boolean", "default": false},
+        "output_name": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "quality": {
+      "type": "object",
+      "properties": {
+        "mode": {"type": "string", "default": "standard"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "x-unknown-field-policy": "warn-not-error"
+}

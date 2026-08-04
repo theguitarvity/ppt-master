@@ -52,6 +52,17 @@ python3 skills/ppt-master/scripts/project_manager.py scaffold-spec <project_path
 python3 skills/ppt-master/scripts/project_manager.py scaffold-lock <project_path>  # optional manual helper
 python3 skills/ppt-master/scripts/project_manager.py validate <project_path>
 
+# CONTEXT.md talk-deck intake (single-file input, e.g. FACOM/UFMS brand.profile) — precedes Step 1
+python3 skills/ppt-master/scripts/context_intake.py <CONTEXT.md> --project-dir <project_path>
+python3 skills/ppt-master/scripts/context_intake.py <CONTEXT.md> --project-dir <project_path> --validate-only
+# Brand lint (FR-011) — active brand.profile assets/usage against its brand-policy.yaml
+python3 skills/ppt-master/scripts/brand_lint.py <project_path> --brand-profile <brand_key>
+# Contact sheet — tile visual_review.py's per-page PNGs into one grid image
+python3 skills/ppt-master/scripts/contact_sheet.py <project_path>
+# Conformance report — orchestrates schema/SVG/render/brand-lint gates, then exports on an
+# all-pass hard gate (FR-019); see skills/ppt-master/templates/schemas/host-capabilities.schema.json
+python3 skills/ppt-master/scripts/conformance_report.py <project_path> --host <host_id>
+
 # Icon selection — copy chosen library icons into <project>/icons/ (missing names reported + non-zero = re-pick)
 python3 skills/ppt-master/scripts/icon_sync.py <project_path> <lib/name> [<lib/name>...]
 
@@ -90,7 +101,7 @@ python3 skills/ppt-master/scripts/native_enhance_pptx.py validate <project_path>
 python3 skills/ppt-master/scripts/native_enhance_pptx.py apply <project_path>
 ```
 
-For serial post-processing and export, follow [`generate-pptx.md`](skills/ppt-master/workflows/generate-pptx.md) Step 7 exactly. See [`svg-pipeline.md`](skills/ppt-master/scripts/docs/svg-pipeline.md) for tool flags and behavior.
+For serial post-processing and export, follow [`generate-pptx.md`](skills/ppt-master/workflows/generate-pptx.md) Step 7 exactly. See [`svg-pipeline.md`](skills/ppt-master/scripts/docs/svg-pipeline.md) for tool flags and behavior. For the single documented Codex happy path from a `CONTEXT.md` to a validated FACOM/UFMS PPTX, see [`specs/001-generate-facom-deck/quickstart.md`](specs/001-generate-facom-deck/quickstart.md).
 
 ## Core Directories
 

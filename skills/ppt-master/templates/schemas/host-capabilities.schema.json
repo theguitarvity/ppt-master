@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ppt-master://schemas/host-capabilities/v1",
+  "title": "PPT Master host capability declaration",
+  "description": "Schema for skills/ppt-master/adapters/<host_id>/capabilities.json. One file per host; workflows consult this file instead of naming a host or its proprietary primitives directly (Constitution Principle VII). Delivered to skills/ppt-master/templates/schemas/host-capabilities.schema.json in Phase 1 implementation.",
+  "type": "object",
+  "required": [
+    "host_id",
+    "skill_discovery",
+    "shell",
+    "filesystem_read",
+    "filesystem_write",
+    "browser",
+    "image_generation",
+    "parallel_agents",
+    "interactive_confirmation",
+    "image_inspection",
+    "pptx_rendering"
+  ],
+  "properties": {
+    "host_id": {"type": "string", "enum": ["codex", "github-copilot", "claude-code"]},
+    "skill_discovery": {"type": "boolean"},
+    "shell": {"type": "boolean"},
+    "filesystem_read": {"type": "boolean"},
+    "filesystem_write": {"type": "boolean"},
+    "browser": {"type": "string", "enum": ["true", "false", "optional"]},
+    "image_generation": {"type": "string", "enum": ["native", "api", "unavailable"]},
+    "parallel_agents": {"type": "string", "enum": ["native", "sequential-fallback", "unavailable"]},
+    "interactive_confirmation": {"type": "string", "enum": ["web-ui", "chat", "unavailable"]},
+    "image_inspection": {"type": "boolean"},
+    "pptx_rendering": {"type": "string", "enum": ["local", "external", "unavailable"]},
+    "notes": {
+      "type": "string",
+      "description": "Free-text documentation of a declared limitation and its fallback; required whenever any field above is 'unavailable', 'sequential-fallback', or false for a capability the happy path depends on."
+    }
+  },
+  "additionalProperties": false
+}

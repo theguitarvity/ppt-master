@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="1280" height="720" viewBox="0 0 1280 720"
+  data-pptx-master="facom_ufms_dark_master" data-pptx-master-name="FACOM/UFMS Dark"
+  data-pptx-layout="cover" data-pptx-layout-name="Cover">
+  <rect id="dark-master-background" x="0" y="0" width="1280" height="720" fill="#0088B7"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <image id="dark-master-grafo-motif" x="760" y="80" width="460" height="460"
+    href="../../brands/facom-ufms/images/grafo_facom.png" opacity="0.14"
+    preserveAspectRatio="xMidYMid meet"
+    data-pptx-layer="master" data-pptx-editable="false"/>
+  <rect id="dark-master-bottom-rule" x="0" y="716" width="1280" height="4" fill="#FFFFFF"
+    fill-opacity="0.35" data-pptx-layer="master" data-pptx-editable="false"/>
+
+  <image id="cover-logo" x="480" y="72" width="320" height="154"
+    href="../../brands/facom-ufms/images/ufms_logo_negativo.png"
+    preserveAspectRatio="xMidYMid meet"
+    data-pptx-layer="layout" data-pptx-editable="false"/>
+  <line id="cover-separator" x1="440" y1="360" x2="840" y2="360" stroke="#FFFFFF"
+    stroke-width="1" stroke-opacity="0.4" data-pptx-layer="layout" data-pptx-editable="false"/>
+
+  <g id="cover-title-slot" data-pptx-placeholder="title"
+    data-pptx-bounds="160 380 960 92">
+    <text id="cover-title-carrier" data-pptx-carrier="true"
+      x="640" y="440" text-anchor="middle" fill="#FFFFFF"
+      font-family="Inter, Arial, sans-serif"
+      font-size="44" font-weight="700">{{TITLE}}</text>
+  </g>
+  <g id="cover-subtitle-slot" data-pptx-placeholder="subtitle" data-pptx-idx="1"
+    data-pptx-bounds="220 476 840 56">
+    <text id="cover-subtitle-carrier" data-pptx-carrier="true"
+      x="640" y="514" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.86"
+      font-family="Inter, Arial, sans-serif" font-size="24">{{SUBTITLE}}</text>
+  </g>
+  <g id="cover-author-slot" data-pptx-placeholder="body" data-pptx-idx="2"
+    data-pptx-bounds="300 584 680 44">
+    <text id="cover-author-carrier" data-pptx-carrier="true"
+      x="640" y="614" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.92"
+      font-family="Inter, Arial, sans-serif" font-size="22">{{AUTHOR}}</text>
+  </g>
+  <g id="cover-footer-slot" data-pptx-placeholder="footer" data-pptx-idx="3"
+    data-pptx-bounds="300 630 680 32">
+    <text id="cover-footer-carrier" data-pptx-carrier="true"
+      x="640" y="652" text-anchor="middle" fill="#FFFFFF" fill-opacity="0.7"
+      font-family="Inter, Arial, sans-serif" font-size="16">{{AFFILIATION}}</text>
+  </g>
+</svg>

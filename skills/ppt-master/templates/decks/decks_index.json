@@ -10,5 +10,11 @@
     "canvas_format": "ppt169",
     "page_count": 5,
     "primary_color": "#004098"
+  },
+  "facom-ufms-talk": {
+    "summary": "Palestra técnica FACOM/UFMS 16:9 — aulas, defesas, seminários e projetos de pesquisa e extensão; identidade herdada do brand facom-ufms.",
+    "canvas_format": "ppt169",
+    "page_count": "auto",
+    "primary_color": "#0088B7"
   }
 }
